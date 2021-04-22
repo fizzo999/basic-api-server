@@ -10,23 +10,21 @@ basic server to showcase how to break out routes following data modelling for db
 
 ### <center> links and resources </center>
 
-#### <center> [heroku deployed site](https://fizzo-basic-express-server.herokuapp.com/person?name=Fizzo) </center>
+#### <center> [heroku deployed site](https://fizzo-basic-api-server.herokuapp.com/food) </center>
 
 <!-- #### <center> [github actions](https://github.com/fizzo999/server-deployment-practice/actions) </center> -->
 
 <!-- #### <center> [github pull request](https://github.com/fizzo999/server-deployment-practice/pull/1) </center> -->
 
-#### <center> [ci/cd - github](https://github.com/fizzo999/basic-express-server/actions/runs/769507085) </center>
+#### <center> [ci/cd - github](https://github.com/fizzo999/basic-api-server/runs/2406395315?check_suite_focus=true) </center>
 
-#### <center> [merged pull request - github](https://github.com/fizzo999/basic-express-server/pull/2) </center>
-
-<!-- ![Cont Integration Cont Deploy](src/continuousIntegrationContinuousDepolyment.png) -->
+#### <center> [merged pull request - github](https://github.com/fizzo999/basic-api-server/pull/1) </center>
 
 ![Cont Integration Cont Deploy](src/continuousIntegrationContinuousDepolyment002.png)
 
 ## <center> UML DIAGRAM </center>
 
-![web request response cycle diagram](src/1249-WRRC.PNG)
+![web request response cycle diagram](src/1324-WRRC.PNG)
 
 ## Overview
 
@@ -48,9 +46,10 @@ npm start
 Endpoint: /clothes for a list of items and /clothes/1 for the 1st item
 Endpoint: /food for a list of food items and /food/1 for the 1st food item
 
-Returns Object
-
-{ "name": "YOU_FILL_IN_THE_BLANK" }
+Returns Array of Objects in case of GET
+Returns success message in case of POST
+Returns the updated object in case of PUT
+Returns success message in case of DELETE
 
 Tests
 Unit Tests: npm run test
